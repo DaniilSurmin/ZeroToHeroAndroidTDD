@@ -69,7 +69,13 @@ class MainViewModelTest {
         initialize()
 
         viewModel.restore(bundleWrapper = bundleWrapperRestore)
-        liveDataWrapper.checkUpdateCalls(listOf(UiState.ShowData(text = "testingText")))
+        liveDataWrapper.checkUpdateCalls(
+            listOf(
+                UiState.ShowData(
+                    text = "testingText"
+                )
+            )
+        )
         repository.checkLoadCalledTimes(0)
     }
 }
