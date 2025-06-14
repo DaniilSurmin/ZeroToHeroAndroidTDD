@@ -4,8 +4,9 @@ import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.core.view.isVisible
+import java.io.Serializable
 
-interface UiState {
+interface UiState : Serializable{
 
     fun apply (textView: TextView, button: Button, progressBar: ProgressBar)
 

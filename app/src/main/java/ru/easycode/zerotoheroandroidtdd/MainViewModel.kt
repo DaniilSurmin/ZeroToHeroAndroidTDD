@@ -20,5 +20,14 @@ class MainViewModel(
         }
     }
 
-    override fun liveData() = liveDataWrapper.liveData()
+     override fun liveData() = liveDataWrapper.liveData()
+
+    fun save(bundleWrapper: BundleWrapper.Save) {
+        liveDataWrapper.save(bundleWrapper)
+    }
+
+    fun restore(bundleWrapper: BundleWrapper.Restore) {
+        val uiState = bundleWrapper.restore()
+        liveDataWrapper.update(uiState)
+    }
 }
