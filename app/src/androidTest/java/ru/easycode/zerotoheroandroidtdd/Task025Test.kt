@@ -1,9 +1,9 @@
-package ru.easycode.zerotoheroandroidtdd
+import ru.easycode.zerotoheroandroidtdd.CreatePage
+import ru.easycode.zerotoheroandroidtdd.ListPage
 
 import androidx.test.espresso.Espresso.pressBack
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
