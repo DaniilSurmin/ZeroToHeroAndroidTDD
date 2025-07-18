@@ -12,7 +12,7 @@ import org.hamcrest.Matchers.allOf
 
 abstract class AbstractPage(protected val root: Int) {
 
-    protected open fun rootClass(): Class<out ViewGroup> = LinearLayout::class.java
+    protected fun rootClass(): Class<out ViewGroup> = LinearLayout::class.java
 
     private val rootInteraction = onView(
         allOf(
